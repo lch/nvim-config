@@ -7,3 +7,7 @@ A personal using [Neovim](https://neovim.io/) configuration.
 
 * Tab indentation with 4 spaces width.
 * Completion with Language Server support. Current configured languages: C (`clangd`), Go(`gopls`)
+
+## References
+
+* LSP configuration references: [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
