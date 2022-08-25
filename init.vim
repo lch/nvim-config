@@ -37,6 +37,9 @@ Plug 'simrat39/rust-tools.nvim'
 " Language Server Manager
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+
+" Formatter
+Plug 'sbdchd/neoformat'
 call plug#end()
 
 colorscheme afterglow
@@ -45,5 +48,10 @@ let g:afterglow_blackout=1
 
 " weilbith/nvim-code-action-menu
 let g:code_action_menu_window_border = 'single'
+
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
 
 lua require('config')
