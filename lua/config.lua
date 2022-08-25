@@ -71,8 +71,10 @@ cmp.setup {
     end, { 'i', 's' }),
   }),
   sources = {
-    { name = 'nvim_lsp' },
+    { name = 'nvim_lsp' },                       -- from language server
     { name = 'luasnip' },
+    { name = 'vsnip', keyword_length = 2 },      -- nvim-cmp source for vim-vsnip
+    { name = 'nvim_lsp_signature_help'},         -- display function signatures with current parameter emphasized
   },
 }
 
