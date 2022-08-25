@@ -11,9 +11,13 @@ set cinoptions=(0,u0,U0
 set autoindent
 
 call plug#begin(stdpath('data') . '/plugged')
+" Theme and Style
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'danilo-augusto/vim-afterglow'
+Plug 'weilbith/nvim-code-action-menu'
+
+" Language Server Protocol and completion Support
 Plug 'neovim/nvim-lspconfig' "Collection of configurations for built-in LSP client
 Plug 'hrsh7th/nvim-cmp' "Autocompletion plugin
 Plug 'hrsh7th/cmp-nvim-lsp' "LSP source for nvim-cmp
@@ -26,7 +30,13 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'saadparwaiz1/cmp_luasnip' "Snippets source for nvim-cmp
 Plug 'L3MON4D3/LuaSnip' "Snippets plugin
-Plug 'weilbith/nvim-code-action-menu'
+
+" Rust related
+Plug 'simrat39/rust-tools.nvim'
+
+" Language Server Manager
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
 call plug#end()
 
 colorscheme afterglow
