@@ -40,6 +40,9 @@ Plug 'williamboman/mason-lspconfig.nvim'
 
 " Formatter
 Plug 'sbdchd/neoformat'
+
+" Indent processor
+Plug 'Darazaki/indent-o-matic'
 call plug#end()
 
 colorscheme afterglow
