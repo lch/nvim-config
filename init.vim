@@ -10,6 +10,7 @@ set cindent
 set cinoptions=(0,u0,U0
 set autoindent
 set cursorline
+set splitright
 
 call plug#begin(stdpath('data') . '/plugged')
 " Theme and Style
@@ -25,7 +26,11 @@ Plug 'Darazaki/indent-o-matic'
 Plug 'farmergreg/vim-lastplace'
 call plug#end()
 
+if (has("termguicolors"))
+	set termguicolors
+endif
 colorscheme afterglow
+" set background=dark
 let g:airline_powerline_fonts = 1
 " let g:afterglow_blackout=1
 let g:afterglow_inherit_background=1
